@@ -19,8 +19,9 @@ const PageCrds = () => {
           </span>{" "}
           <h1 className="mt-3 text-2xl font-extrabold leading-tight md:text-4xl">
             {" "}
-            Books to <span className="text-yellow-300"> freshen up </span> TRAIN
-            WITH INTENT. LOG <br />{" "}
+            TRAIN WITH INTENT. LOG <br />
+         EVERY SET. <span className="text-yellow-300">  </span> 
+             <br />{" "}
           </h1>{" "}
           <p className="mt-2 hidden text-sm text-white/75 sm:block">
             {" "}
