@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
+import logo from '../assets/logo.png'
+import Image from 'next/image';
 
 const Navbar = () => {
   const Links = <>
-  
-   <li><a>Home</a></li>
-      
-  <li><a>Listed Books</a></li>
-  <li><a>Pages to Read</a></li>
+    
+  <li><a>Workouts</a></li>
+  <li><a>My Plan</a></li>
   
   </>
     return (
@@ -23,15 +23,29 @@ const Navbar = () => {
         {Links}
       </ul>
     </div>
-    <a className="btn btn-ghost text-xl">daisyUI</a>
+   <div className='flex items-center gap-3.5'> 
+    <div>
+   <Image src={logo} alt=''/>
+    </div>
+    <div>
+        <a className=" btn-ghost text-xl">My Plan</a>
+    </div>
+   </div>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
      {Links}
     </ul>
   </div>
-  <div className="navbar-end">
-    <a className="btn">Button</a>
+  <div className="navbar-end gap-3.5">
+    <div>
+    <a className="">Plan</a>
+    </div>
+     <div>
+     <a className="">Saved</a>
+
+     </div>
+     
   </div>
 </div>
     );

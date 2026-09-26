@@ -6,7 +6,7 @@ const DynamicCard = async ({ params }) => {
   const { CardId } = await params;
 
   const res = await fetch(
-    `https://api.abcz.workers.dev/api/fitlog/${CardId}`
+    ` https://api.api-store.workers.dev/api/fitlog/${CardId}`
   );
 
   if (!res.ok) {
