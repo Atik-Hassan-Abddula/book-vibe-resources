@@ -1,13 +1,19 @@
 
 import React from 'react';
-import HomePage from './Components/HomePage/Banner';
-import Books from './Books/Books';
+import HeroPage from './Card/page';
+import CardPage from './Card/page';
+import PageCrds from './Cards/page';
+
+
 
 const page = () => {
   return (
     <div>
-      <HomePage></HomePage>
-      <Books></Books>
+    
+   <PageCrds></PageCrds>
+    <CardPage></CardPage>
+      
+      
     </div>
   );
 };
