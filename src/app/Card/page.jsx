@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const getExercise = async () => {
@@ -147,9 +148,11 @@ const CardPage = async () => {
                     </p>
                   </div>
 
+                 <Link href={`/Card/${exercise.id}`}>
                   <button className="btn btn-primary rounded-xl px-6 shadow-md transition hover:scale-105">
                     View Details →
                   </button>
+                 </Link>
 
                 </div>
               </div>

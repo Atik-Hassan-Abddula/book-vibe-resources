@@ -5,73 +5,67 @@ import logo from "../assets/hero_img.jpg";
 
 const PageCrds = () => {
   return (
-    <section className="relative mx-auto mt-10 max-w-6xl overflow-hidden rounded-[2rem] bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 px-8 py-10 text-white shadow-2xl md:px-14 md:py-14">
+    <section className="relative mx-auto mt-6 max-w-6xl overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 px-6 py-6 text-white shadow-xl md:px-10 md:py-7">
 
-      {/* Decorative Circle */}
-      <div className="absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-sm" />
+      {/* Background Decoration */}
+      <div className="absolute -right-16 -top-20 h-48 w-48 rounded-full bg-white/10" />
+      <div className="absolute -bottom-20 left-1/3 h-40 w-40 rounded-full bg-pink-300/10 blur-2xl" />
 
-      <div className="absolute -bottom-24 left-1/3 h-64 w-64 rounded-full bg-pink-300/20 blur-2xl" />
-
-      <div className="relative z-10 flex flex-col items-center justify-between gap-10 md:flex-row">
+      <div className="relative z-10 flex items-center justify-between gap-6">
 
         {/* Left Content */}
-        <div className="max-w-xl text-center md:text-left">
+        <div className="max-w-xl">
 
-          <span className="mb-4 inline-block rounded-full border border-white/30 bg-white/10 px-4 py-2 text-sm font-medium backdrop-blur-md">
+          <span className="rounded-full border border-white/20 bg-white/10 px-3 py-1 text-xs backdrop-blur-md">
             📚 Explore • Read • Grow
           </span>
 
-          <h1 className="text-4xl font-extrabold leading-tight md:text-6xl">
-            Books to
-            <span className="block text-yellow-300">
+          <h1 className="mt-3 text-2xl font-extrabold leading-tight md:text-4xl">
+            Books to{" "}
+            <span className="text-yellow-300">
               freshen up
-            </span>
+            </span>{" "}
             your bookshelf
           </h1>
 
-          <p className="mt-5 max-w-lg text-base leading-7 text-white/80 md:text-lg">
-            Discover inspiring stories, timeless classics and amazing books
-            that deserve a special place on your bookshelf.
+          <p className="mt-2 hidden text-sm text-white/75 sm:block">
+            Discover amazing stories and books for your collection.
           </p>
 
-          <button className="group mt-7 rounded-full bg-white px-7 py-3 font-bold text-purple-700 shadow-lg transition duration-300 hover:-translate-y-1 hover:bg-yellow-300 hover:text-purple-900">
+          <button className="group mt-4 rounded-full bg-white px-5 py-2 text-sm font-bold text-purple-700 shadow-md transition hover:-translate-y-1 hover:bg-yellow-300">
             View The List
-            <span className="ml-2 inline-block transition-transform duration-300 group-hover:translate-x-1">
+            <span className="ml-1 transition group-hover:translate-x-1">
               →
             </span>
           </button>
+
         </div>
 
         {/* Right Image */}
-        <div className="relative">
+        <div className="relative shrink-0">
 
           {/* Glow */}
-          <div className="absolute inset-0 rounded-full bg-yellow-300/30 blur-3xl" />
+          <div className="absolute inset-0 rounded-full bg-yellow-300/30 blur-2xl" />
 
-          {/* Image Container */}
-          <div className="relative rotate-3 overflow-hidden rounded-3xl border-4 border-white/30 bg-white/10 p-3 shadow-2xl backdrop-blur-sm transition duration-500 hover:rotate-0 hover:scale-105">
+          <div className="relative rotate-3 overflow-hidden rounded-2xl border-2 border-white/30 bg-white/10 p-2 shadow-xl transition duration-300 hover:rotate-0">
 
             <Image
               src={logo}
-              width={320}
-              height={320}
+              width={190}
+              height={150}
               alt="Books"
-              className="h-64 w-64 rounded-2xl object-cover md:h-80 md:w-80"
+              className="h-28 w-36 rounded-xl object-cover md:h-36 md:w-48"
             />
 
           </div>
 
-          {/* Floating Badge */}
-          <div className="absolute -bottom-5 -left-5 rounded-2xl bg-white px-5 py-3 text-purple-700 shadow-xl">
-            <p className="text-xs font-medium text-gray-500">
-              Your next
-            </p>
-            <p className="font-bold">
-              Great Read 📖
-            </p>
+          {/* Small Badge */}
+          <div className="absolute -bottom-3 -left-3 rounded-lg bg-white px-3 py-1.5 text-xs font-bold text-purple-700 shadow-lg">
+            📖 Great Read
           </div>
 
         </div>
+
       </div>
     </section>
   );
